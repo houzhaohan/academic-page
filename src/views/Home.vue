@@ -7,7 +7,6 @@
       <p>
         Welcome to my academic homepage.
         I’m <strong>Zhaohan Hou</strong> (侯兆晗 in Chinese), a Master’s student at the <strong>University of North Carolina at Chapel Hill</strong>. 
-        I am on AI4Science and machine learning.
         My work lies at the intersection of AI4Science and machine learning, with particular interests in deep learning, natural language processing, and large language models.
       </p>
     </section>
