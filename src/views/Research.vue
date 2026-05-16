@@ -67,13 +67,14 @@
 <script setup>
 import { ref } from 'vue'
 import { Picture } from '@element-plus/icons-vue'
+import clipImage from '@/assets/research/clip.webp'
 
 const projects = ref([
   {
     title: 'Research and Application of CLIP Pre-training Model Based on Hash Algorithm in Cross-modal Retrieval and Localization of Farmland Insect Images',
     description: 'This project researches and develops an intelligent agricultural insect image retrieval and localization system based on B/S architecture, integrating CLIP and hash algorithms for efficient cross-modal retrieval via text descriptions. It visualizes pest locations and densities using scatter plots and heat maps from field camera data, supporting early warning, targeted control, model fine-tuning, and spatiotemporal analysis to promote precision and green agriculture.',
     tags: ['Graduation Design & Thesis', 'Fine Tune CLIP Pre-training Model', 'Image Retrieval'],
-    image: '/src/assets/research/clip.webp',
+    image: clipImage,
     paper: '',
     code: '',
     demo: ''
