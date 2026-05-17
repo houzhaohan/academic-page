@@ -135,14 +135,14 @@ h2 {
 
 .research-image {
   width: 100%;
-  height: 250px;
+  aspect-ratio: 16 / 9;
   border-radius: 8px;
   overflow: hidden;
 }
 
 .image-error {
   width: 100%;
-  height: 250px;
+  aspect-ratio: 16 / 9;
   background-color: #f5f7fa;
   display: flex;
   align-items: center;
