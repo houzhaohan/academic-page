@@ -15,6 +15,7 @@
           <el-menu-item index="/">Home</el-menu-item>
           <el-menu-item index="/research">Research</el-menu-item>
           <el-menu-item index="/publications">Publications</el-menu-item>
+          <el-menu-item index="/cv">CV</el-menu-item>
           <el-menu-item index="/contact">Contact</el-menu-item>
         </el-menu>
       </div>
