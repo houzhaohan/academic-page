@@ -35,10 +35,10 @@
 
     <section class="section">
       <h2>Honors & Awards</h2>
-      <el-table :data="awards" border stripe style="width: 900px" class="awards-table">
+      <el-table :data="awards" border stripe style="width: 950px" class="awards-table">
         <el-table-column prop="award" label="Award" width="500" />
         <el-table-column prop="institution" label="Institution" width="300" />
-        <el-table-column prop="year" label="Year" width="100" />
+        <el-table-column prop="year" label="Year" width="150" />
       </el-table>
     </section>
   </div>
@@ -82,6 +82,7 @@ h2 {
 
 .section {
   margin-bottom: 40px;
+  width: 1000px;
 }
 
 .education-card {
