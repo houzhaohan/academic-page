@@ -73,16 +73,26 @@
       <el-timeline>
         <el-timeline-item timestamp="2026 - Present" placement="top">
           <el-card>
-            <h4>University of North Carolina at Chapel Hill</h4>
-            <p>M.S. in Data Science</p>
-            <p>Location: Chapel Hill, NC, USA</p>
+            <div class="education-card">
+              <img :src="UNCLogo" alt="UNC Logo" class="education-logo" />
+              <div class="education-info">
+                <h4>University of North Carolina at Chapel Hill</h4>
+                <p>M.S. in Data Science</p>
+                <p>Location: Chapel Hill, NC, USA</p>
+              </div>
+            </div>
           </el-card>
         </el-timeline-item>
         <el-timeline-item timestamp="2022 - 2026" placement="top">
           <el-card>
-            <h4>Nanjing Agricultural University</h4>
-            <p>B.S. in Information Management and Information System</p>
-            <p>Location: Nanjing, Jiangsu, China</p>
+            <div class="education-card">
+              <img :src="NJAULogo" alt="NJAU Logo" class="education-logo" />
+              <div class="education-info">
+                <h4>Nanjing Agricultural University</h4>
+                <p>B.S. in Information Management and Information System</p>
+                <p>Location: Nanjing, Jiangsu, China</p>
+              </div>
+            </div>
           </el-card>
         </el-timeline-item>
       </el-timeline>
@@ -92,6 +102,8 @@
 
 <script setup>
 import { Monitor, ChatDotRound, Picture } from '@element-plus/icons-vue'
+import UNCLogo from '@/assets/UNC.svg'
+import NJAULogo from '@/assets/NJAU.webp'
 </script>
 
 <style scoped>
@@ -119,5 +131,30 @@ h2 {
 
 .card-header .el-icon {
   font-size: 20px;
+}
+
+.education-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.education-logo {
+  width: 220px;
+  height: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.education-info {
+  flex: 1;
+}
+
+.education-info h4 {
+  margin: 0 0 10px 0;
+}
+
+.education-info p {
+  margin: 5px 0;
 }
 </style>
