@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Publications from '../views/Publications.vue'
 import Research from '../views/Research.vue'
 import Contact from '../views/Contact.vue'
+import CV from '../views/CV.vue'
 import NotFound from '../views/NotFound.vue'
 
 const routes = [
@@ -25,6 +26,11 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/cv',
+    name: 'CV',
+    component: CV
   },
   {
     path: '/:pathMatch(.*)*',
