@@ -2,6 +2,8 @@
 
 [中文版](./README.zh.md) | English
 
+The current website is entirely developed by Zhaohan Hou, without reference to other websites.
+
 ### Link
 Please visit the current website at: [https://unc.houzhaohan.vip](https://unc.houzhaohan.vip)
 
