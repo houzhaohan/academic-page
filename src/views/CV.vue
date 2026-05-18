@@ -7,7 +7,7 @@
       <h2>Education</h2>
       <el-timeline>
         <el-timeline-item timestamp="2026 - Present" placement="top">
-          <el-card>
+          <el-card shadow="hover">
             <div class="education-card">
               <img :src="UNCLogo" alt="UNC Logo" class="education-logo" />
               <div class="education-info">
@@ -19,7 +19,7 @@
           </el-card>
         </el-timeline-item>
         <el-timeline-item timestamp="2022 - 2026" placement="top">
-          <el-card>
+          <el-card shadow="hover">
             <div class="education-card">
               <img :src="NJAULogo" alt="NJAU Logo" class="education-logo" />
               <div class="education-info">
