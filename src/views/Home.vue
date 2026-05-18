@@ -54,13 +54,13 @@
       <h2>News</h2>
       <el-timeline>
         <el-timeline-item timestamp="August 2026" placement="top">
-          <el-card>
+          <el-card shadow="hover">
             <h4>Admitted</h4>
             <p>I will join UNC SDSS in August this year.</p>
           </el-card>
         </el-timeline-item>
         <el-timeline-item timestamp="June 2026" placement="top">
-          <el-card>
+          <el-card shadow="hover">
             <h4>Graduated</h4>
             <p>I will graduate from Nanjing Agricultural University in June this year.</p>
           </el-card>
