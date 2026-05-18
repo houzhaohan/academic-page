@@ -58,6 +58,26 @@
         </section>
       </el-col>
     </el-row>
+
+    <section class="section">
+      <h2>Location</h2>
+      <el-card class="map-card">
+        <p class="map-service-note">
+          Map powered by Google Maps
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCGdmL-h5V_pZe99dDA2TN0KJP9s0HPRVo&q=35.9033718,-79.048371"
+          class="map-frame"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+        <p class="map-note">
+          <el-icon><Location /></el-icon>
+          211 Manning Drive - Office Location, UNC Chapel Hill, School of Data Science and Society
+        </p>
+        
+      </el-card>
+    </section>
   </div>
 </template>
 
@@ -187,5 +207,35 @@ h2 {
 
 .section h2 + .el-card {
   box-shadow: none;
+}
+
+.map-card {
+  padding: 10px;
+}
+
+.map-frame {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 4px;
+}
+
+.map-note {
+  margin-top: 12px;
+  color: #606266;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.map-note .el-icon {
+  color: #409eff;
+}
+
+.map-service-note {
+  margin-right: 40px;
+  color: #909399;
+  font-style: italic;
+  text-align: right;
 }
 </style>
