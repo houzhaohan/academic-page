@@ -65,25 +65,36 @@
         <p class="map-service-note">
           Map powered by Google Maps
         </p>
-        <iframe
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCGdmL-h5V_pZe99dDA2TN0KJP9s0HPRVo&q=35.9033718,-79.048371"
-          class="map-frame"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
+        <div class="map-container">
+          <iframe
+            v-if="mapStatus !== 'error'"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCGdmL-h5V_pZe99dDA2TN0KJP9s0HPRVo&q=35.9033718,-79.048371"
+            class="map-frame"
+            frameborder="0"
+            allowfullscreen
+            @load="handleMapLoad"
+            @error="handleMapError"
+          ></iframe>
+          <div v-if="mapStatus === 'loading'" class="map-overlay map-loading">
+            Loading map...
+          </div>
+          <div v-if="mapStatus === 'error'" class="map-error-message">
+            <el-icon><WarningFilled /></el-icon>
+            Please check your network connection and ensure you can access Google Maps.
+          </div>
+        </div>
         <p class="map-note">
           <el-icon><Location /></el-icon>
           211 Manning Drive - Office Location, UNC Chapel Hill, School of Data Science and Society
         </p>
-        
       </el-card>
     </section>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { Message, Phone, OfficeBuilding, Location } from '@element-plus/icons-vue'
+import { ref, onMounted, onUnmounted } from 'vue'
+import { Message, Phone, OfficeBuilding, Location, WarningFilled } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
 
 const formData = ref({
@@ -92,6 +103,32 @@ const formData = ref({
 })
 
 const loading = ref(false)
+const mapStatus = ref('loading') // 'loading', 'loaded', 'error'
+let mapLoadTimer = null
+
+const handleMapLoad = () => {
+  clearTimeout(mapLoadTimer)
+  mapStatus.value = 'loaded'
+}
+
+const handleMapError = () => {
+  clearTimeout(mapLoadTimer)
+  mapStatus.value = 'error'
+}
+
+onMounted(() => {
+  mapLoadTimer = setTimeout(() => {
+    if (mapStatus.value === 'loading') {
+      mapStatus.value = 'error'
+    }
+  }, 15000)
+})
+
+onUnmounted(() => {
+  if (mapLoadTimer) {
+    clearTimeout(mapLoadTimer)
+  }
+})
 
 const handleSubmit = async () => {
   loading.value = true
@@ -213,10 +250,28 @@ h2 {
   padding: 10px;
 }
 
+.map-container {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+}
+
 .map-frame {
   width: 100%;
   height: 400px;
   border: none;
+  border-radius: 4px;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
 }
 
@@ -237,5 +292,29 @@ h2 {
   color: #909399;
   font-style: italic;
   text-align: right;
+}
+
+.map-error-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px 20px;
+  background: #fef0f0;
+  border: 1px solid #fbc4c4;
+  border-radius: 4px;
+  color: #f56c6c;
+  font-size: 14px;
+  min-height: 400px;
+}
+
+.map-error-message .el-icon {
+  font-size: 20px;
+}
+
+.map-loading {
+  background: rgba(245, 247, 250, 0.95);
+  color: #909399;
+  font-size: 14px;
 }
 </style>
