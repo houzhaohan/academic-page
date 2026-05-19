@@ -76,6 +76,10 @@ import SPSSIcon from '@/assets/cv/spss.svg'
 import TorIcon from '@/assets/cv/tor.svg'
 import VueIcon from '@/assets/cv/vue.svg'
 import WiresharkIcon from '@/assets/cv/wireshark.svg'
+import NginxIcon from '@/assets/cv/nginx.svg'
+import PyTorchIcon from '@/assets/cv/pytorch.svg'
+import SciKitIcon from '@/assets/cv/scikit-learn.svg'
+import TensorFlowIcon from '@/assets/cv/tensorflow.svg'
 
 const awards = ref([
   {
@@ -109,9 +113,13 @@ const skills = ref([
   { name: 'JavaScript', icon: JavaScriptIcon },
   { name: 'Vue', icon: VueIcon },
   { name: 'Cloudflare', icon: CloudflareIcon },
+  { name: 'Nginx', icon: NginxIcon },
   { name: 'MySQL', icon: MySQLIcon },
   { name: 'Git', icon: GitIcon },
   { name: 'Linux', icon: LinuxIcon },
+  { name: 'PyTorch', icon: PyTorchIcon },
+  { name: 'scikit-learn', icon: SciKitIcon },
+  { name: 'TensorFlow', icon: TensorFlowIcon },
   { name: 'SPSS', icon: SPSSIcon },
   { name: 'Photoshop', icon: PhotoshopIcon },
   { name: 'Illustrator', icon: IllustratorIcon },
