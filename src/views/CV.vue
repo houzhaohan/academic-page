@@ -64,6 +64,11 @@ const awards = ref([
     award: 'Third Prize, the 2025 (18th) Chinese Collegiate Computing Competition',
     institution: 'Ministry of Education, China',
     year: '2025'
+  },
+  {
+    award: 'Honorable Mention, The Mathematical Contest in Modeling/The Interdisciplinary Contest in Modeling (MCM/ICM)',
+    institution: 'Consortium for Mathematics and Its Applications, USA',
+    year: '2025'
   }
 ])
 </script>
