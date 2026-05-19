@@ -41,6 +41,16 @@
         <el-table-column prop="year" label="Year" width="150" />
       </el-table>
     </section>
+
+    <section class="section">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div v-for="skill in skills" :key="skill.name" class="skill-item">
+          <img :src="skill.icon" :alt="skill.name" class="skill-icon" />
+          <span class="skill-name">{{ skill.name }}</span>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -48,6 +58,24 @@
 import { ref } from 'vue'
 import UNCLogo from '@/assets/UNC.svg'
 import NJAULogo from '@/assets/NJAU.webp'
+import BioIcon from '@/assets/cv/bio.svg'
+import CIcon from '@/assets/cv/c.svg'
+import CloudflareIcon from '@/assets/cv/cloudflare.svg'
+import CSSIcon from '@/assets/cv/css.svg'
+import GitIcon from '@/assets/cv/git.svg'
+import HTMLIcon from '@/assets/cv/html.svg'
+import IllustratorIcon from '@/assets/cv/illustrator.svg'
+import JavaScriptIcon from '@/assets/cv/javascript.svg'
+import LinuxIcon from '@/assets/cv/linux.svg'
+import MySQLIcon from '@/assets/cv/mysql.svg'
+import PhotoshopIcon from '@/assets/cv/photoshop.svg'
+import PremiereProIcon from '@/assets/cv/premierepro.svg'
+import PythonIcon from '@/assets/cv/python.svg'
+import RIcon from '@/assets/cv/r.svg'
+import SPSSIcon from '@/assets/cv/spss.svg'
+import TorIcon from '@/assets/cv/tor.svg'
+import VueIcon from '@/assets/cv/vue.svg'
+import WiresharkIcon from '@/assets/cv/wireshark.svg'
 
 const awards = ref([
   {
@@ -71,6 +99,26 @@ const awards = ref([
     year: '2025'
   }
 ])
+
+const skills = ref([
+  { name: 'C', icon: CIcon },
+  { name: 'Python', icon: PythonIcon },
+  { name: 'R', icon: RIcon },
+  { name: 'HTML', icon: HTMLIcon },
+  { name: 'CSS', icon: CSSIcon },
+  { name: 'JavaScript', icon: JavaScriptIcon },
+  { name: 'Vue', icon: VueIcon },
+  { name: 'Cloudflare', icon: CloudflareIcon },
+  { name: 'MySQL', icon: MySQLIcon },
+  { name: 'Git', icon: GitIcon },
+  { name: 'Linux', icon: LinuxIcon },
+  { name: 'SPSS', icon: SPSSIcon },
+  { name: 'Photoshop', icon: PhotoshopIcon },
+  { name: 'Illustrator', icon: IllustratorIcon },
+  { name: 'Premiere Pro', icon: PremiereProIcon },
+  { name: 'Tor', icon: TorIcon },
+  { name: 'Wireshark', icon: WiresharkIcon }
+])
 </script>
 
 <style scoped>
@@ -87,7 +135,6 @@ h2 {
 
 .section {
   margin-bottom: 40px;
-  width: 1000px;
 }
 
 .education-card {
@@ -117,5 +164,41 @@ h2 {
 
 .awards-table {
   margin-left: 50px;  /* 表格左边距 */
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 25px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-item:hover {
+  background-color: #f5f7fa;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.skill-name {
+  font-size: 14px;
+  color: #606266;
+  text-align: center;
+  font-weight: 500;
 }
 </style>
