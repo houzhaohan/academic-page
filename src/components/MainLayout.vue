@@ -41,7 +41,7 @@
             </div>
             <div class="social-item">
               <el-icon :size="24" class="icon"><Location /></el-icon>
-              <span class="icon-text">Chapel Hill, NC</span>
+              <span class="icon-text">Chapel Hill, NC, USA</span>
             </div>
             <div class="social-item">
               <el-icon :size="24" class="icon"><Message /></el-icon>
