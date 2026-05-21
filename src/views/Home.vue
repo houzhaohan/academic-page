@@ -4,10 +4,14 @@
     <el-divider />
     <section class="section">
       <h2>About Me</h2>
-      <p>
+      <p style="line-height: 1.4; margin-bottom: 10px;">
         Welcome to my academic homepage.
-        I’m <strong>Zhaohan Hou</strong> (侯兆晗 in Chinese), a Master’s student at the <strong>University of North Carolina at Chapel Hill</strong>. 
+        I’m <strong>Zhaohan Hou</strong> (侯兆晗 in Chinese), a Master‘s student at the <strong>University of North Carolina at Chapel Hill</strong>. 
         My work lies at the intersection of AI4Science and machine learning, with particular interests in deep learning, natural language processing, and large language models.
+      </p>
+      <p style="line-height: 1.4;">
+        I'm currently looking for <span style="color: red;">research collaboration</span> and <span style="color: red;">open-source project collaboration</span>.
+        Feel free to reach out to me anytime.
       </p>
     </section>
 
