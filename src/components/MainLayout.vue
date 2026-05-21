@@ -29,7 +29,10 @@
           </div>
           <h2 class="sidebar-name">Zhaohan Hou</h2>
           <p class="sidebar-bio">
-            Code once, run everywhere — write with care, scale with air.
+            Code once, run everywhere —
+            Write with care, scale with air.
+            Build with thought, deploy with grace,
+            Let logic linger in every space.
           </p>
           <div class="social-icons">
             <div class="social-item" @click="openLink('https://www.unc.edu')">
@@ -51,6 +54,10 @@
             <div class="social-item" @click="openLink('https://github.com/houzhaohan')">
               <el-icon :size="24" class="icon"><Link /></el-icon>
               <span class="icon-text link-text">https://github.com/houzhaohan</span>
+            </div>
+            <div class="social-item" @click="openLink('https://linkedin.com/in/houzhaohan')">
+              <el-icon :size="24" class="icon"><Link /></el-icon>
+              <span class="icon-text link-text">https://linkedin.com/in/houzhaohan</span>
             </div>
           </div>
         </div>
@@ -177,13 +184,13 @@ const openLink = (url) => {
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
-  padding-left: 20px;
+  padding-left: 6px;
 }
 
 .social-item {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .icon {
