@@ -45,7 +45,7 @@
     <section class="section">
       <h2>Experience</h2>
       <el-timeline>
-        <el-timeline-item timestamp="2025.10 - 2026.6" placement="top">
+        <el-timeline-item timestamp="October 2025 - June 2026" placement="top">
           <el-card shadow="hover">
             <div class="experience-card">
               <div class="experience-info">
