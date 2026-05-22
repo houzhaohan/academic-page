@@ -68,6 +68,7 @@
 import { ref } from 'vue'
 import { Picture } from '@element-plus/icons-vue'
 import clipImage from '@/assets/research/clip.webp'
+import srtImage from '@/assets/research/srt.webp'
 
 const projects = ref([
   {
@@ -84,6 +85,15 @@ const projects = ref([
     description: 'The research is currently in progress...',
     tags: ['Gene Ontology', 'ESM-1b Coding', 'Triplet neural network'],
     image: '',
+    paper: '',
+    code: '',
+    demo: ''
+  },
+  {
+    title: 'Research on the Influencing Factors Model of Artificial Intelligence Literacy from the Perspective of Individual Behavior and Social Culture Integration',
+    description: 'This project uses structural equation modeling (SEM) with maximum likelihood estimation on survey responses to analyze how digital divide, computational thinking, and cognitive absorption affect AI literacy. It evaluates model fit (CFI, RMSEA) and conducts reliability (Cronbach’s α) and validity (CR, AVE) tests to examine latent-variable relationships and mediating pathways.',
+    tags: ['Student Research Training Programme', 'Structural Equation Model', 'Artificial Intelligence Literacy'],
+    image: srtImage,
     paper: '',
     code: '',
     demo: ''
