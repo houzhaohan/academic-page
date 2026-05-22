@@ -43,6 +43,22 @@
     </section>
 
     <section class="section">
+      <h2>Experience</h2>
+      <el-timeline>
+        <el-timeline-item timestamp="2025.10 - 2026.6" placement="top">
+          <el-card shadow="hover">
+            <div class="experience-card">
+              <div class="experience-info">
+                <h4>Research Assistant</h4>
+                <p>Nanjing Agricultural University, Department of Computer Science</p>
+              </div>
+            </div>
+          </el-card>
+        </el-timeline-item>
+      </el-timeline>
+    </section>
+
+    <section class="section">
       <h2>Technical Skills</h2>
       <div class="skills-grid">
         <div v-for="skill in skills" :key="skill.name" class="skill-item">
@@ -167,6 +183,24 @@ h2 {
 }
 
 .education-info p {
+  margin: 5px 0;
+}
+
+.experience-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.experience-info {
+  flex: 1;
+}
+
+.experience-info h4 {
+  margin: 0 0 10px 0;
+}
+
+.experience-info p {
   margin: 5px 0;
 }
 
