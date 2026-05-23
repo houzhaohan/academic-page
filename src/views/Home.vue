@@ -9,9 +9,13 @@
         I’m <strong>Zhaohan Hou</strong> (侯兆晗 in Chinese), a Master‘s student at the <strong>University of North Carolina at Chapel Hill</strong>. 
         My work lies at the intersection of AI4Science and machine learning, with particular interests in deep learning, natural language processing, and large language models.
       </p>
-      <p style="line-height: 1.4;">
+      <p style="line-height: 1.4; margin-bottom: 10px;">
         I'm currently looking for <span style="color: red;">research collaboration</span> and <span style="color: red;">open-source project collaboration</span>.
         Feel free to reach out to me anytime.
+      </p>
+      <p style="line-height: 1.4;">
+        For my complete undergraduate experience, please visit 
+        <a href="https://njau.houzhaohan.vip" target="_blank" rel="noopener noreferrer">https://njau.houzhaohan.vip</a>
       </p>
     </section>
 
