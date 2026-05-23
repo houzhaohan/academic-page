@@ -49,7 +49,7 @@
           <el-card shadow="hover">
             <div class="experience-card">
               <div class="experience-info">
-                <h4>Research Assistant</h4>
+                <h4>Volunteer Research Assistant</h4>
                 <p>Nanjing Agricultural University, Department of Computer Science</p>
               </div>
             </div>
