@@ -3,7 +3,7 @@
     <h1>Publications</h1>
     <el-divider />
     
-    <p class="scholar-link">A complete list of publications can be found on <a href="https://cloud.umami.is/q/HksL3b66u" target="_blank">Google Scholar</a>.</p>
+    <p class="scholar-link">A complete list of publications can be found on <a class="scholar-anchor" @click="openLink('https://cloud.umami.is/q/HksL3b66u')">Google Scholar</a>.</p>
     
     <!-- 
     <section class="section">
@@ -107,6 +107,7 @@ h1 {
   font-weight: 500;
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
+  cursor: pointer;
 }
 
 .scholar-link a:hover {
