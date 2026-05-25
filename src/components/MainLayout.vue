@@ -37,7 +37,7 @@
           <div class="social-icons">
             <div class="social-item" @click="openLink('https://www.unc.edu')">
               <el-icon :size="24" class="icon"><School /></el-icon>
-              <span class="icon-text link-text"">University of North Carolina</span>
+              <span class="icon-text link-text">University of North Carolina</span>
             </div>
             <div class="social-item">
               <el-icon :size="24" class="icon"><Location /></el-icon>
