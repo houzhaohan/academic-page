@@ -74,7 +74,6 @@
 import { ref } from 'vue'
 import UNCLogo from '@/assets/UNC.svg'
 import NJAULogo from '@/assets/NJAU.webp'
-import BioIcon from '@/assets/cv/bio.svg'
 import CIcon from '@/assets/cv/c.svg'
 import CloudflareIcon from '@/assets/cv/cloudflare.svg'
 import CSSIcon from '@/assets/cv/css.svg'
@@ -121,8 +120,8 @@ const awards = ref([
 ])
 
 const skills = ref([
-  { name: 'C', icon: CIcon },
   { name: 'Python', icon: PythonIcon },
+  { name: 'C', icon: CIcon },
   { name: 'R', icon: RIcon },
   { name: 'HTML', icon: HTMLIcon },
   { name: 'CSS', icon: CSSIcon },
