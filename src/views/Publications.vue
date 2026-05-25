@@ -3,7 +3,7 @@
     <h1>Publications</h1>
     <el-divider />
     
-    <p class="scholar-link">A complete list of publications can be found on <a href="https://scholar.google.com/citations?user=StnWJOwAAAAJ" target="_blank">Google Scholar</a>.</p>
+    <p class="scholar-link">A complete list of publications can be found on <a href="https://cloud.umami.is/q/HksL3b66u" target="_blank">Google Scholar</a>.</p>
     
     <!-- 
     <section class="section">
