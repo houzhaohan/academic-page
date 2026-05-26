@@ -95,6 +95,7 @@ import NginxIcon from '@/assets/cv/nginx.svg'
 import PyTorchIcon from '@/assets/cv/pytorch.svg'
 import SciKitIcon from '@/assets/cv/scikit-learn.svg'
 import TensorFlowIcon from '@/assets/cv/tensorflow.svg'
+import HuggingFaceIcon from '@/assets/cv/huggingface.svg'
 
 const awards = ref([
   {
@@ -135,6 +136,7 @@ const skills = ref([
   { name: 'scikit-learn', icon: SciKitIcon },
   { name: 'PyTorch', icon: PyTorchIcon },
   { name: 'TensorFlow', icon: TensorFlowIcon },
+  { name: 'Hugging Face', icon: HuggingFaceIcon },
   { name: 'SPSS', icon: SPSSIcon },
   { name: 'Photoshop', icon: PhotoshopIcon },
   { name: 'Illustrator', icon: IllustratorIcon },
