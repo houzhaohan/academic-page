@@ -64,7 +64,7 @@ const journals = ref([
 const conferences = ref([
   {
     title: 'Analysis of Martingale Strategy in Quantitative Trading Market Based on BiLSTM-Attention Model',
-    authors: '<strong>Zhaohan Hou</strong>',
+    authors: '<span style="color:blue;">Zhaohan Hou</span>',
     venue: '2025 IEEE 3rd International Conference on Sensors, Electronics and Computer Engineering (ICSECE 2025)',
     year: 2025,
     pdf: 'https://paper.houzhaohan.vip/3-1st.pdf',
@@ -73,7 +73,7 @@ const conferences = ref([
   },
   {
     title: 'Discussion on the Determination Methods for Crack Width Collection Capacity of Highway Pavement',
-    authors: 'Meixia Wang, Zhenwei Zhang, <strong>Zhaohan Hou</strong>, Mingyang Jin, Ao Ji',
+    authors: 'Meixia Wang, Zhenwei Zhang, <span style="color:blue;">Zhaohan Hou</span>, Mingyang Jin, Ao Ji',
     venue: '2024 6th International Symposium on Architecture Research Frontiers and Ecological Environment (ARFEE 2024)',
     year: 2024,
     pdf: 'https://paper.houzhaohan.vip/2024EIConference.pdf',
