@@ -76,7 +76,7 @@ const conferences = ref([
     authors: 'Meixia Wang, Zhenwei Zhang, <strong>Zhaohan Hou</strong>, Mingyang Jin, Ao Ji',
     venue: '2024 6th International Symposium on Architecture Research Frontiers and Ecological Environment (ARFEE 2024)',
     year: 2024,
-    pdf: 'https://paper.houzhaohan.vip/2-3rd.pdf',
+    pdf: 'https://paper.houzhaohan.vip/2024EIConference.pdf',
     doi: 'https://doi.org/10.1051/e3sconf/202561801010',
     code: ''
   }
