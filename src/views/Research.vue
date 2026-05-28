@@ -83,7 +83,7 @@ const projects = ref([
   },
   {
     title: 'Integrating Unsupervised Language Model with Triplet Neural Networks for Protein Gene Ontology Prediction',
-    description: 'The research is currently in progress...',
+    description: 'ATGO is a deep learning-based algorithm for high accuracy protein Gene Ontology (GO) prediction. Starting from a query sequence, it first extracts three layers of feature embeddings from a pre-trained protein language model (ESM-1b). Next, a fully connected neural network is used to fuse the feature embeddings, which are then fed into a supervised triplet network for GO function prediction. Large-scale benchmark tests demonstrated significant advantage of ATGO on protein function annotations due to the integration of discriminative feature embeddings from attention transformer models.',
     tags: ['Gene Ontology', 'ESM-1b Coding', 'Triplet neural network'],
     image: InProgressImage,
     paper: '',
