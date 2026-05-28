@@ -67,6 +67,7 @@
 <script setup>
 import { ref } from 'vue'
 import { Picture } from '@element-plus/icons-vue'
+import InProgressImage from '@/assets/research/InProgress.jpg'
 import clipImage from '@/assets/research/clip.webp'
 import srtImage from '@/assets/research/srt.webp'
 
@@ -84,7 +85,7 @@ const projects = ref([
     title: 'Integrating Unsupervised Language Model with Triplet Neural Networks for Protein Gene Ontology Prediction',
     description: 'The research is currently in progress...',
     tags: ['Gene Ontology', 'ESM-1b Coding', 'Triplet neural network'],
-    image: '',
+    image: InProgressImage,
     paper: '',
     code: '',
     demo: ''
