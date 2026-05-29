@@ -73,19 +73,19 @@ import srtImage from '@/assets/research/srt.webp'
 
 const projects = ref([
   {
-    title: 'Research and Application of CLIP Pre-training Model Based on Hash Algorithm in Cross-modal Retrieval and Localization of Farmland Insect Images',
-    description: 'This project researches and develops an intelligent agricultural insect image retrieval and localization system based on B/S architecture, integrating CLIP and hash algorithms for efficient cross-modal retrieval via text descriptions. It visualizes pest locations and densities using scatter plots and heat maps from field camera data, supporting early warning, targeted control, model fine-tuning, and spatiotemporal analysis to promote precision and green agriculture.',
-    tags: ['Graduation Design & Thesis', 'Fine Tune CLIP Pre-training Model', 'Image Retrieval'],
-    image: clipImage,
+    title: 'Integrating Unsupervised Language Model with Triplet Neural Networks for Protein Gene Ontology Prediction',
+    description: 'ATGO is a deep learning-based algorithm for high accuracy protein Gene Ontology (GO) prediction. Starting from a query sequence, it first extracts three layers of feature embeddings from a pre-trained protein language model (ESM-1b). Next, a fully connected neural network is used to fuse the feature embeddings, which are then fed into a supervised triplet network for GO function prediction. Large-scale benchmark tests demonstrated significant advantage of ATGO on protein function annotations due to the integration of discriminative feature embeddings from attention transformer models.',
+    tags: ['Gene Ontology', 'ESM-1b Coding', 'Triplet neural network'],
+    image: InProgressImage,
     paper: '',
     code: '',
     demo: ''
   },
   {
-    title: 'Integrating Unsupervised Language Model with Triplet Neural Networks for Protein Gene Ontology Prediction',
-    description: 'ATGO is a deep learning-based algorithm for high accuracy protein Gene Ontology (GO) prediction. Starting from a query sequence, it first extracts three layers of feature embeddings from a pre-trained protein language model (ESM-1b). Next, a fully connected neural network is used to fuse the feature embeddings, which are then fed into a supervised triplet network for GO function prediction. Large-scale benchmark tests demonstrated significant advantage of ATGO on protein function annotations due to the integration of discriminative feature embeddings from attention transformer models.',
-    tags: ['Gene Ontology', 'ESM-1b Coding', 'Triplet neural network'],
-    image: InProgressImage,
+    title: 'Research and Application of CLIP Pre-training Model Based on Hash Algorithm in Cross-modal Retrieval and Localization of Farmland Insect Images',
+    description: 'This project researches and develops an intelligent agricultural insect image retrieval and localization system based on B/S architecture, integrating CLIP and hash algorithms for efficient cross-modal retrieval via text descriptions. It visualizes pest locations and densities using scatter plots and heat maps from field camera data, supporting early warning, targeted control, model fine-tuning, and spatiotemporal analysis to promote precision and green agriculture.',
+    tags: ['Graduation Design & Thesis', 'Fine Tune CLIP Pre-training Model', 'Image Retrieval'],
+    image: clipImage,
     paper: '',
     code: '',
     demo: ''
