@@ -5,7 +5,7 @@
 The current website is entirely developed by Zhaohan Hou, without reference to other websites.
 
 ### Link
-Please visit the current website at: [https://unc.houzhaohan.vip](https://www.houzhaohan.vip)
+Please visit the current website at: [https://www.houzhaohan.vip](https://www.houzhaohan.vip)
 
 ### Tech Stack
 
