@@ -5,7 +5,7 @@
 当前网站完全由侯兆晗独立开发，没有参考任何网站。
 
 ### 链接
-当前网站请访问：[https://unc.houzhaohan.vip](https://www.houzhaohan.vip)
+当前网站请访问：[https://www.houzhaohan.vip](https://www.houzhaohan.vip)
 
 ### 技术栈
 
