@@ -67,7 +67,7 @@ const conferences = ref([
     authors: '<span style="color:blue;">Zhaohan Hou</span>',
     venue: '2025 IEEE 3rd International Conference on Sensors, Electronics and Computer Engineering (ICSECE 2025)',
     year: 2025,
-    pdf: 'https://paper.houzhaohan.vip/3-1st.pdf',
+    pdf: 'https://paper.houzhaohan.vip/ICSECE2025.pdf',
     doi: 'https://ieeexplore.ieee.org/document/11256825',
     code: 'https://github.com/houzhaohan/Analysis-of-Martingale-Strategy-in-Quantitative-Trading-Market-Based-on-BiLSTM-Attention-Model'
   },
