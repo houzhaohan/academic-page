@@ -50,7 +50,20 @@
             <div class="experience-card">
               <div class="experience-info">
                 <h4>Volunteer Research Assistant</h4>
-                <p>Nanjing Agricultural University, Department of Computer Science</p>
+                <p>Department of Computer Science, Nanjing Agricultural University</p>
+                <p>Mentor: Yi-Heng Zhu</p>
+              </div>
+            </div>
+          </el-card>
+        </el-timeline-item>
+
+        <el-timeline-item timestamp="May 2025 - August 2026" placement="top">
+          <el-card shadow="hover">
+            <div class="experience-card">
+              <div class="experience-info">
+                <h4>Summer Research Intern</h4>
+                <p>Department of Computer Science and Engineering, The Hong Kong University of Science and Technology</p>
+                <p>Mentor: Ke Yi</p>
               </div>
             </div>
           </el-card>
