@@ -57,7 +57,7 @@
           </el-card>
         </el-timeline-item>
 
-        <el-timeline-item timestamp="May 2025 - August 2026" placement="top">
+        <el-timeline-item timestamp="May 2025 - August 2025" placement="top">
           <el-card shadow="hover">
             <div class="experience-card">
               <div class="experience-info">
