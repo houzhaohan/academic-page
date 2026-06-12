@@ -109,6 +109,7 @@ import PyTorchIcon from '@/assets/cv/pytorch.svg'
 import SciKitIcon from '@/assets/cv/scikit-learn.svg'
 import TensorFlowIcon from '@/assets/cv/tensorflow.svg'
 import HuggingFaceIcon from '@/assets/cv/huggingface.svg'
+import ProteinIcon from '@/assets/cv/protein.svg'
 
 const awards = ref([
   {
@@ -155,7 +156,8 @@ const skills = ref([
   { name: 'Illustrator', icon: IllustratorIcon },
   { name: 'Premiere Pro', icon: PremiereProIcon },
   { name: 'Tor', icon: TorIcon },
-  { name: 'Wireshark', icon: WiresharkIcon }
+  { name: 'Wireshark', icon: WiresharkIcon },
+  { name: 'Proteomics', icon: ProteinIcon }
 ])
 </script>
 
