@@ -67,7 +67,7 @@ const conferences = ref([
     authors: '<span style="color:blue;">Zhaohan Hou</span>',
     venue: '2025 IEEE 3rd International Conference on Sensors, Electronics and Computer Engineering (ICSECE 2025)',
     year: 2025,
-    pdf: 'https://paper.houzhaohan.vip/ICSECE2025.pdf',
+    pdf: 'https://papers.houzhaohan.vip/ICSECE2025.pdf',
     doi: 'https://doi.org/10.1109/ICSECE65727.2025.11256825',
     code: 'https://github.com/houzhaohan/Analysis-of-Martingale-Strategy-in-Quantitative-Trading-Market-Based-on-BiLSTM-Attention-Model'
   },
@@ -76,7 +76,7 @@ const conferences = ref([
     authors: 'Meixia Wang, Zhenwei Zhang, <span style="color:blue;">Zhaohan Hou</span>, Mingyang Jin, Ao Ji',
     venue: '2024 6th International Symposium on Architecture Research Frontiers and Ecological Environment (ARFEE 2024)',
     year: 2024,
-    pdf: 'https://paper.houzhaohan.vip/2024EIConference.pdf',
+    pdf: 'https://papers.houzhaohan.vip/2024EIConference.pdf',
     doi: 'https://doi.org/10.1051/e3sconf/202561801010',
     code: ''
   }
