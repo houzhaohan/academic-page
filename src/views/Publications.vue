@@ -5,34 +5,22 @@
     
     <p class="scholar-link">A complete list of publications can be found on <a class="scholar-anchor" @click="openLink('https://cloud.umami.is/q/HksL3b66u')">Google Scholar</a>.</p>
     
-    <!-- 
-    <section class="section">
-      <h2>Journal Articles</h2>
-      <el-card v-for="(pub, index) in journals" :key="index" class="publication-card" shadow="hover">
-        <h3>{{ pub.title }}</h3>
-        <p class="authors" v-html="pub.authors"></p>
-        <p class="venue"><strong>{{ pub.venue }}</strong>, {{ pub.year }}</p>
-        <div class="links">
-          <el-button v-if="pub.pdf" type="primary" link @click="openLink(pub.pdf)">PDF</el-button>
-          <el-button v-if="pub.doi" type="primary" link @click="openLink(pub.doi)">DOI</el-button>
-          <el-button v-if="pub.code" type="primary" link @click="openLink(pub.code)">Code</el-button>
-        </div>
-      </el-card>
-    </section>
-    -->
+    <br>
 
     <section class="section">
-      <h2>Conference Papers</h2>
-      <el-card v-for="(pub, index) in conferences" :key="index" class="publication-card" shadow="hover">
-        <h3>{{ pub.title }}</h3>
-        <p class="authors" v-html="pub.authors"></p>
-        <p class="venue"><strong>{{ pub.venue }}</strong>, {{ pub.year }}</p>
-        <div class="links">
-          <el-button v-if="pub.pdf" type="primary" link @click="openLink(pub.pdf)">PDF</el-button>
-          <el-button v-if="pub.doi" type="primary" link @click="openLink(pub.doi)">DOI</el-button>
-          <el-button v-if="pub.code" type="primary" link @click="openLink(pub.code)">Code</el-button>
-        </div>
-      </el-card>
+      <template v-for="(pub, index) in publications" :key="index">
+        <h2 v-if="index === 0 || pub.year !== publications[index - 1].year">{{ pub.year }}</h2>
+        <el-card class="publication-card" shadow="hover">
+          <h3>{{ pub.title }}</h3>
+          <p class="authors" v-html="pub.authors"></p>
+          <p class="venue"><strong>{{ pub.venue }}</strong></p>
+          <div class="links">
+            <el-button v-if="pub.pdf" type="primary" link @click="openLink(pub.pdf)">PDF</el-button>
+            <el-button v-if="pub.doi" type="primary" link @click="openLink(pub.doi)">DOI</el-button>
+            <el-button v-if="pub.code" type="primary" link @click="openLink(pub.code)">Code</el-button>
+          </div>
+        </el-card>
+      </template>
     </section>
   </div>
 </template>
@@ -40,28 +28,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const journals = ref([
-  {
-    title: 'Deep Learning for Natural Language Understanding: A Comprehensive Survey',
-    authors: 'Your Name, Co-author A, Co-author B',
-    venue: 'Journal of Artificial Intelligence Research',
-    year: 2026,
-    pdf: 'https://example.com/paper1.pdf',
-    doi: 'https://ieeexplore.ieee.org/document/11256825',
-    code: 'https://github.com/example/paper1'
-  },
-  {
-    title: 'Advances in Multimodal Machine Learning',
-    authors: 'Your Name, Co-author C',
-    venue: 'IEEE Transactions on Pattern Analysis and Machine Intelligence',
-    year: 2025,
-    pdf: 'https://example.com/paper1.pdf',
-    doi: 'https://ieeexplore.ieee.org/document/11256825',
-    code: 'https://github.com/example/paper1'
-  }
-])
-
-const conferences = ref([
+const publications = ref([
   {
     title: 'Analysis of Martingale Strategy in Quantitative Trading Market Based on BiLSTM-Attention Model',
     authors: '<span style="color:blue;">Zhaohan Hou</span>',
