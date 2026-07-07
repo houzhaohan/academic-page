@@ -7,7 +7,7 @@
       <p style="line-height: 1.4; margin-bottom: 10px;">
         Welcome to my academic homepage.
         I’m <strong>Zhaohan Hou</strong> (侯兆晗 in Chinese), a Master‘s student at the <strong>University of North Carolina at Chapel Hill</strong>. 
-        My work lies at the intersection of AI4Science and machine learning, with particular interests in deep learning, natural language processing, and large language models.
+        My work lies at the intersection of Machine Learning and AI4Science, with particular interests in deep learning, natural language processing, and large language models.
       </p>
       <p style="line-height: 1.4;">
         I'm currently looking for <span style="color: red;">research collaboration</span> and <span style="color: red;">open-source project collaboration</span>.
@@ -17,16 +17,16 @@
 
     <section class="section">
       <h2>Research Interests</h2>
-      <el-row :gutter="20">
+      <el-row :gutter="20" class="research-row">
         <el-col :span="8">
           <el-card shadow="hover">
             <template #header>
               <div class="card-header">
                 <el-icon><Monitor /></el-icon>
-                <span>Machine Learning</span>
+                <span>Machine Learning / Deep Learning / Computational Biology</span>
               </div>
             </template>
-            <p>Deep learning, reinforcement learning, and neural networks</p>
+            <p>Deep learning architectures, Representation learning, Multimodal feature fusion</p>
           </el-card>
         </el-col>
         <el-col :span="8">
@@ -34,10 +34,10 @@
             <template #header>
               <div class="card-header">
                 <el-icon><ChatDotRound /></el-icon>
-                <span>NLP</span>
+                <span>Natural Language Processing / Biological Language Modeling</span>
               </div>
             </template>
-            <p>Natural language understanding, text generation, and machine translation</p>
+            <p>Protein language models, Molecular sequence modeling, Self-supervised pre-training on biological sequences</p>
           </el-card>
         </el-col>
         <el-col :span="8">
@@ -45,10 +45,10 @@
             <template #header>
               <div class="card-header">
                 <el-icon><Tickets /></el-icon>
-                <span>Large Language Model</span>
+                <span>Large Language Models / Pre-trained Foundation Models</span>
               </div>
             </template>
-            <p>Model fine-tuning, model continues to train, model deployment</p>
+            <p>Pre-training strategies, transfer learning, Model fine-tuning for biomedical downstream tasks</p>
           </el-card>
         </el-col>
       </el-row>
@@ -103,5 +103,13 @@ h2 {
 
 .card-header .el-icon {
   font-size: 20px;
+}
+
+.research-row .el-card {
+  height: 100%;
+}
+
+.research-row :deep(.el-card__body) {
+  flex: 1;
 }
 </style>
