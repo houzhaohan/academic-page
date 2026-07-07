@@ -13,7 +13,10 @@
         <el-card class="publication-card" shadow="hover">
           <h3>{{ pub.title }}</h3>
           <p class="authors" v-html="pub.authors"></p>
-          <p class="venue"><strong>{{ pub.venue }}</strong></p>
+          <div class="venue-row">
+            <p class="venue"><strong>{{ pub.venue }}</strong></p>
+            <el-tag v-for="(tag, index) in pub.tags" :key="index" size="small" type="info">{{ tag }}</el-tag>
+          </div>
           <div class="links">
             <el-button v-if="pub.pdf" type="primary" link @click="openLink(pub.pdf)">PDF</el-button>
             <el-button v-if="pub.doi" type="primary" link @click="openLink(pub.doi)">DOI</el-button>
@@ -34,6 +37,7 @@ const publications = ref([
     authors: '<span style="color:blue;">Zhaohan Hou</span>',
     venue: '2025 IEEE 3rd International Conference on Sensors, Electronics and Computer Engineering (ICSECE 2025)',
     year: 2025,
+    tags: ['EI Compendex', 'IEEE Xplore'],
     pdf: 'https://papers.houzhaohan.vip/ICSECE2025.pdf',
     doi: 'https://doi.org/10.1109/ICSECE65727.2025.11256825',
     code: 'https://github.com/houzhaohan/Analysis-of-Martingale-Strategy-in-Quantitative-Trading-Market-Based-on-BiLSTM-Attention-Model'
@@ -43,6 +47,7 @@ const publications = ref([
     authors: 'Meixia Wang, Zhenwei Zhang, <span style="color:blue;">Zhaohan Hou</span>, Mingyang Jin, Ao Ji',
     venue: '2024 6th International Symposium on Architecture Research Frontiers and Ecological Environment (ARFEE 2024)',
     year: 2024,
+    tags: ['EI Compendex'],
     pdf: 'https://papers.houzhaohan.vip/2024EIConference.pdf',
     doi: 'https://doi.org/10.1051/e3sconf/202561801010',
     code: ''
@@ -107,9 +112,16 @@ h2 {
   margin-bottom: 8px;
 }
 
+.venue-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
 .venue {
   color: #909399;
-  margin-bottom: 10px;
 }
 
 .links {
