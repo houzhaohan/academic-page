@@ -75,18 +75,7 @@
     <section class="section">
       <h2>Motto</h2>
       <el-card shadow="hover">
-        <span style="color:#6f42c1;"># my python life motto</span><br>
-        <span style="color:#005cc5;">while</span> <span style="color:#24292e;">life.has_unknown_problems()</span><span style="color:#d73a49;">:</span><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#005cc5;">try</span><span style="color:#d73a49;">:</span><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#24292e;">code</span> <span style="color:#d73a49;">=</span> <span style="color:#22863a;">write_calmly()</span><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#24292e;">debug</span> <span style="color:#d73a49;">=</span> <span style="color:#22863a;">fix_patiently(code)</span><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#24292e;">iterate</span> <span style="color:#d73a49;">=</span> <span style="color:#22863a;">upgrade_steadily(debug)</span><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#795548;">print</span><span style="color:#24292e;">(</span><span style="color:#032f62;">"Every bug is a stair to clearer logic"</span><span style="color:#24292e;">)</span><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#005cc5;">except</span> <span style="color:#e36209;">fatigue</span><span style="color:#d73a49;">:</span><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#24292e;">rest</span> <span style="color:#d73a49;">=</span> <span style="color:#22863a;">take_break()</span><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#005cc5;">continue</span><br>
-        <span style="color:#005cc5;">else</span><span style="color:#d73a49;">:</span><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#795548;">print</span><span style="color:#24292e;">(</span><span style="color:#032f62;">"Keep coding, Keep exploring, Never stop thinking"</span><span style="color:#24292e;">)</span>
+        “ 90% of ML is data wrangling. The other 10% is blaming the random seed. ”
         <br>
         <svg ref="signatureSvg" viewBox="0 0 232.31 62.79" xmlns="http://www.w3.org/2000/svg" class="motto-signature">
           <path class="signature-path" d="M.5,15.13s.91,2.06,4.8.61S41.57,4,49.64,5.45-9.82,59.51,2.63,54.29s41.3-14.9,45.03-15.01"/>
