@@ -35,10 +35,10 @@
 
     <section class="section">
       <h2>Honors & Awards</h2>
-      <el-table :data="awards" border stripe style="width: 950px" class="awards-table">
-        <el-table-column prop="award" label="Award" width="500" />
-        <el-table-column prop="institution" label="Institution" width="300" />
-        <el-table-column prop="year" label="Year" width="150" />
+      <el-table :data="awards" border stripe style="width: 90%" class="awards-table">
+        <el-table-column prop="award" label="Award" min-width="300" />
+        <el-table-column prop="institution" label="Institution" min-width="200" />
+        <el-table-column prop="year" label="Year" width="100" />
       </el-table>
     </section>
 
