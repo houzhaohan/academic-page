@@ -66,7 +66,7 @@
         <el-timeline-item timestamp="June 2026" placement="top">
           <el-card shadow="hover">
             <h4>Graduated</h4>
-            <p>I will graduate from Nanjing Agricultural University in June this year.</p>
+            <p>I graduated from Nanjing Agricultural University as an outstanding student.</p>
           </el-card>
         </el-timeline-item>
       </el-timeline>
