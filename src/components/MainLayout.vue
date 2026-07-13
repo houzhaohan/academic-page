@@ -89,6 +89,9 @@ watch(
   () => route.path,
   (newPath) => {
     activeIndex.value = newPath
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+    const mainEl = document.querySelector('.main-content')
+    if (mainEl) mainEl.scrollTo({ top: 0, behavior: 'smooth' })
   }
 )
 
