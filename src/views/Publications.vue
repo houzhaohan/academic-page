@@ -8,8 +8,8 @@
     <br>
 
     <section class="section">
-      <template v-for="(pub, index) in publications" :key="index">
-        <h2 v-if="index === 0 || pub.year !== publications[index - 1].year">{{ pub.year }}</h2>
+      <template v-for="(pub, index) in paginatedPublications" :key="index">
+        <h2 v-if="index === 0 || pub.year !== paginatedPublications[index - 1].year">{{ pub.year }}</h2>
         <el-card class="publication-card" shadow="hover">
           <h3>{{ pub.title }}</h3>
           <p class="authors" v-html="pub.authors"></p>
@@ -25,34 +25,47 @@
         </el-card>
       </template>
     </section>
+
+    <div class="pagination-container">
+      <el-pagination
+        v-model:current-page="currentPage"
+        v-model:page-size="pageSize"
+        :total="total"
+        :page-sizes="[10, 20, 30, 50]"
+        layout="total, sizes, prev, pager, next, jumper"
+        @size-change="handleSizeChange"
+        @current-change="handleCurrentChange"
+      />
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import { publications as publicationsData } from '@/data/publications'
 
-const publications = ref([
-  {
-    title: 'Analysis of Martingale Strategy in Quantitative Trading Market Based on BiLSTM-Attention Model',
-    authors: '<span style="color:blue;">Zhaohan Hou</span>',
-    venue: '2025 IEEE 3rd International Conference on Sensors, Electronics and Computer Engineering (ICSECE 2025)',
-    year: 2025,
-    tags: ['EI Compendex', 'IEEE Xplore'],
-    pdf: 'https://papers.houzhaohan.vip/ICSECE2025.pdf',
-    doi: 'https://doi.org/10.1109/ICSECE65727.2025.11256825',
-    code: 'https://github.com/houzhaohan/Analysis-of-Martingale-Strategy-in-Quantitative-Trading-Market-Based-on-BiLSTM-Attention-Model'
-  },
-  {
-    title: 'Discussion on the Determination Methods for Crack Width Collection Capacity of Highway Pavement',
-    authors: 'Meixia Wang, Zhenwei Zhang, <span style="color:blue;">Zhaohan Hou</span>, Mingyang Jin, Ao Ji',
-    venue: '2024 6th International Symposium on Architecture Research Frontiers and Ecological Environment (ARFEE 2024)',
-    year: 2024,
-    tags: ['EI Compendex'],
-    pdf: 'https://papers.houzhaohan.vip/2024EIConference.pdf',
-    doi: 'https://doi.org/10.1051/e3sconf/202561801010',
-    code: ''
-  }
-])
+const publications = ref(publicationsData)
+
+const currentPage = ref(1)
+const pageSize = ref(10)
+const total = computed(() => publications.value.length)
+
+const paginatedPublications = computed(() => {
+  const start = (currentPage.value - 1) * pageSize.value
+  const end = start + pageSize.value
+  return publications.value.slice(start, end)
+})
+
+const handleSizeChange = (val) => {
+  pageSize.value = val
+  currentPage.value = 1
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+const handleCurrentChange = (val) => {
+  currentPage.value = val
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 
 const openLink = (url) => {
   window.open(url, '_blank')
@@ -127,5 +140,11 @@ h2 {
 .links {
   display: flex;
   gap: 10px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 </style>
