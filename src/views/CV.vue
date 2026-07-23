@@ -86,7 +86,7 @@
 <script setup>
 import { ref } from 'vue'
 import UNCLogo from '@/assets/UNC.svg'
-import NJAULogo from '@/assets/NJAU.webp'
+import NJAULogo from '@/assets/NJAU.svg'
 import CIcon from '@/assets/cv/c.svg'
 import CloudflareIcon from '@/assets/cv/cloudflare.svg'
 import CSSIcon from '@/assets/cv/css.svg'
