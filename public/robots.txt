@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /cv/
+Disallow: /contact/
+
+Sitemap: https://houzhaohan.vip/sitemap.xml
