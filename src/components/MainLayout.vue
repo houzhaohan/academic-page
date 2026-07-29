@@ -45,7 +45,7 @@
             </div>
             <div class="social-item">
               <el-icon :size="24" class="icon"><Message /></el-icon>
-              <span class="icon-text">me@houzhaohan.vip</span>
+              <span class="icon-text">hi@houzhaohan.vip</span>
             </div>
             <div class="social-item" @click="openLink('https://blog.houzhaohan.vip')">
               <el-icon :size="24" class="icon"><Link /></el-icon>
