@@ -6,7 +6,7 @@
       <h2>About Me</h2>
       <p style="line-height: 1.4; margin-bottom: 10px;">
         Welcome to my academic homepage.
-        I’m <strong>Zhaohan Hou</strong> (侯兆晗 in Chinese), a Master‘s student at the <strong>University of North Carolina at Chapel Hill</strong>. 
+        I’m <strong>Zhaohan Hou</strong><img :src="trumpetIcon" class="trumpet-btn" @click="playPronunciation" alt="pronunciation" /> (侯兆晗 in Chinese), a Master‘s student at the <strong>University of North Carolina at Chapel Hill</strong>. 
         My work lies at the intersection of Machine Learning and AI4Science, with particular interests in deep learning, natural language processing, and large language models.
       </p>
       <p style="line-height: 1.4;">
@@ -97,8 +97,19 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { Monitor, ChatDotRound, Picture } from '@element-plus/icons-vue'
+import trumpetIcon from '../assets/home/trumpet.svg'
+import pronunciationUrl from '../assets/home/pronunciation.mp3'
 
 const signatureSvg = ref(null)
+const pronunciationAudio = ref(null)
+
+function playPronunciation() {
+  if (!pronunciationAudio.value) {
+    pronunciationAudio.value = new Audio(pronunciationUrl)
+  }
+  pronunciationAudio.value.currentTime = 0
+  pronunciationAudio.value.play()
+}
 
 async function animateSignature() {
   if (!signatureSvg.value) return
@@ -182,5 +193,17 @@ h2 {
   stroke-linecap: round;
   stroke-linejoin: round;
   visibility: hidden;
+}
+
+.trumpet-btn {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 4px;
+  border-radius: 40%;
+  background-color: #f0f0f0;
+  padding: 1px;
+  box-sizing: border-box;
 }
 </style>
