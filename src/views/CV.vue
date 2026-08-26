@@ -13,7 +13,7 @@
               <div class="education-info">
                 <h4>University of North Carolina at Chapel Hill</h4>
                 <p>M.S. in Data Science</p>
-                <p>Location: Chapel Hill, NC, USA</p>
+                <p>Chapel Hill, NC, USA</p>
               </div>
             </div>
           </el-card>
@@ -25,7 +25,7 @@
               <div class="education-info">
                 <h4>Nanjing Agricultural University</h4>
                 <p>B.S. in Information Management and Information System</p>
-                <p>Location: Nanjing, Jiangsu, China</p>
+                <p>Nanjing, Jiangsu, China</p>
               </div>
             </div>
           </el-card>
