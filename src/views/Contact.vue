@@ -85,7 +85,7 @@
         </div>
         <p class="map-note">
           <el-icon><Location /></el-icon>
-          211 Manning Drive - Office Location, UNC Chapel Hill, School of Data Science and Society
+          211 Manning Drive - Office Location, UNC Chapel Hill, School of Data and Information Sciences
         </p>
       </el-card>
     </section>
