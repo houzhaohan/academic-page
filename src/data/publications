@@ -1,5 +1,15 @@
 export const publications = [
   {
+    title: 'The Evolution of Computational Drug-Target Binding Prediction: From Knowledge-Guided to Foundation Model-Based Methods',
+    authors: '<span style="color:blue;">Zhaohan Hou</span>, Xiaojun Xie, Long-Chen Shen, Wei Xue, Yi-Heng Zhu',
+    venue: 'Briefings in Bioinformatics',
+    year: 2026,
+    tags: ['Under Review', 'JCR Q1', 'SCI', 'IF: 7.3'],
+    pdf: '',
+    doi: '',
+    code: ''
+  },
+  {
     title: 'Analysis of Martingale Strategy in Quantitative Trading Market Based on BiLSTM-Attention Model',
     authors: '<span style="color:blue;">Zhaohan Hou</span>',
     venue: '2025 IEEE 3rd International Conference on Sensors, Electronics and Computer Engineering (ICSECE 2025)',
